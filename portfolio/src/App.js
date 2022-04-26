@@ -8,22 +8,15 @@ import Testimonials from "./components/Testimonials"
 
 
 function App() {
-    return ( <
-        main >
-        <
-        Navbar / >
-        <
-        About / >
-        <
-        Projects / >
-        <
-        Skills / >
-        <
-        Testimonials / >
-        <
-        Contact / >
-        <
-        /main>
+    return ( 
+        <main >
+        <Navbar / >
+        <About / >
+        <Projects / >
+        <Skills / >
+        <Testimonials / >
+        <Contact / >
+        </main>
     );
 }
 
