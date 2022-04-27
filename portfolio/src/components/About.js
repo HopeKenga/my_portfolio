@@ -1,5 +1,8 @@
-import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import 'src/components/fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export default function About() {
     return ( <
@@ -20,6 +23,48 @@ export default function About() {
         li >
         <
         div class = "account" >
+        <
+        div style = {
+            { fontSize: '35px' } } >
+        <
+        FontAwesomeIcon icon = "user" / >
+        <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'facebook-square'] }
+        /> <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'instagram-square'] }
+        /> <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'linkedin'] }
+        /> <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'twitter'] }
+        /> <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'google'] }
+        /> <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'youtube'] }
+        /> <
+        div / >
+        <
+        FontAwesomeIcon icon = {
+            ['fab', 'skype'] }
+        /> <
+        /div>
 
         <
         /div> <
