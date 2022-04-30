@@ -29,38 +29,24 @@ export default function About() {
         <
         FontAwesomeIcon icon = "user" / >
         <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'facebook-square'] }
         /> <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'instagram-square'] }
         /> <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'linkedin'] }
         /> <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'twitter'] }
         /> <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'google'] }
         /> <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'youtube'] }
         /> <
-        div / >
-        <
         FontAwesomeIcon icon = {
             ['fab', 'skype'] }
         /> <
