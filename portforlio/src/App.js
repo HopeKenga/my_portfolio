@@ -9,7 +9,7 @@ import Main from "./components/Main";
 import AboutPage from "./components/AboutPage";
 import BlogPage from "./components/BlogPage";
 import WorkPage from "./components/WorkPage";
-import MySkillsPage from "./components/MySKILLSpAGE.JS";
+import MySkillsPage from "./components/MySkillsPage";
 
 
 
