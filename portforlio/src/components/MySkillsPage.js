@@ -93,19 +93,28 @@ const MySkillsPage = () => {
 <ParticleComponent theme='light' />
             <Main>
 <Title>
-    <Design width={40} height={40} /> Designer
+    <Design width={40} height={40} /> Frontend Developer
 </Title>
 <Description>
-I love to create design which speaks, Keep it clean, minimal and simple.
+I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
 </Description>
 <Description>
-<strong>I like to Design</strong>
+<strong>Skills</strong>
 <ul>
     <li>
-        Web Design
+       React
     </li>
     <li>
-        Mobile Apps
+        Next.JS
+    </li>
+    <li>
+        HTML
+    </li>
+    <li>
+        CSS
+    </li>
+    <li>
+        Javascript
     </li>
 </ul>
 </Description>
@@ -113,7 +122,7 @@ I love to create design which speaks, Keep it clean, minimal and simple.
 <strong>Tools</strong>
 <ul>
     <li>
-       Figma
+       Github, VSCode, Figma
     </li>
     
 </ul>
@@ -122,7 +131,7 @@ I love to create design which speaks, Keep it clean, minimal and simple.
             </Main>
             <Main>
 <Title>
-    <Develope width={40} height={40} /> Frontend Developer
+    <Develope width={40} height={40} /> Backend  Developer
 </Title>
 <Description>
 I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
@@ -130,7 +139,7 @@ I value business or brand for which i'm creating, thus i enjoy bringing new idea
 <Description>
 <strong>Skills</strong>
 <p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
+NodeJS, TypeScript, Python, NestJS, SQL ,NoSQL, PostgreSQL, Django, Flask, AWS, Azure, Bash Scripting
 </p>
 </Description>
 <Description>
