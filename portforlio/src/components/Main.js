@@ -11,17 +11,16 @@ import Intro from './Intro'
 
 
 const MainContainer = styled.div`
-background: ${props => props.theme.body};
-width: 100vw;
-height: 100vh;
-overflow:hidden;
+  background: ${({ theme }) => theme.body};
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 
-position: relative;
-
-h2,h3,h4,h5,h6{
-  font-family:'Karla', sans-serif ;
-  font-weight:500;
-}
+  h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+  }
 `
 
 const Container = styled.div`
@@ -88,7 +87,7 @@ to{
 `
 
 const Center = styled.button`
-position: absolute;
+  position: absolute;
 top: ${props => props.click ? '85%' :'50%'  };
 left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
@@ -103,48 +102,47 @@ justify-content: center;
 align-items: center;
 transition: all 1s ease;
 
-&>:first-child{
+  &>:first-child{
     animation: ${rotate} infinite 1.5s linear;
-}
+  }
 
-&>:last-child{
-    display: ${props => props.click ? 'none' :'inline-block'  };
+  &:last-child {
+    display: ${({ click }) => click ? 'none' : 'inline-block'};
     padding-top: 1rem;
-}
+  }
 `
 
 const DarkDiv = styled.div`
-position: absolute;
+  position: absolute;
 top: 0;
 background-color: #000;
 bottom: 0;
 right: 50%;
-width: ${props => props.click ? '50%' : '0%'};
-height: ${props => props.click ? '100%' : '0%'};
+  width: ${props => props.click ? '50%' : '0%'};
+  height: ${props => props.click ? '100%' : '0%'};
 z-index:1;
-transition: height 0.5s ease, width 1s ease 0.5s;
+  transition: height 0.5s ease, width 1s ease 0.5s;
 `
 
 
 const Main = () => {
+  const [click, setClick] = useState(false);
 
-    const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
-    const handleClick = () => setClick(!click);
-
-    return (
-        <MainContainer>
-         <DarkDiv   click={click}/>
-            <Container>
+  return (
+    <MainContainer>
+      <DarkDiv   click={click}/>
+      <Container>
             <PowerButton />
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
            
-            <Center click={click}>
+      <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
-            </Center>
-
+        <span>click here</span>
+      </Center>
+      
             <Contact target="_blank" href="mailto:kengahope7@gmail.com">
                 <motion.h2
                 initial={{
@@ -232,8 +230,8 @@ const Main = () => {
 
             </Container>
             {click ? <Intro click={click} /> : null }
-        </MainContainer>
-    )
+    </MainContainer>
+  )
 }
 
 export default Main

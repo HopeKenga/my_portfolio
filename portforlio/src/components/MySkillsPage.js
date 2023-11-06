@@ -1,8 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import {lightTheme} from './Themes';
-import { Design, Develope} from './AllSvgs';
-
+import { lightTheme } from './Themes';
+import { Design, Develope } from './AllSvgs';
 
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
@@ -83,81 +82,60 @@ ul,p{
 `
 
 const MySkillsPage = () => {
-    return (
-        <ThemeProvider theme={lightTheme}>
-<Box>
+  return (
+    <ThemeProvider theme={lightTheme}>
+      <Box>
+        <LogoComponent theme='light' />
+        <SocialIcons theme='light' />
+        <PowerButton />
+        <ParticleComponent theme='light' />
 
-<LogoComponent theme='light'/>
-<SocialIcons theme='light'/>
-<PowerButton />
-<ParticleComponent theme='light' />
-            <Main>
-<Title>
-    <Design width={40} height={40} /> Frontend Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<ul>
-    <li>
-       React
-    </li>
-    <li>
-        Next.JS
-    </li>
-    <li>
-        HTML
-    </li>
-    <li>
-        CSS
-    </li>
-    <li>
-        Javascript
-    </li>
-</ul>
-</Description>
-<Description>
-<strong>Tools</strong>
-<ul>
-    <li>
-       Github, VSCode, Figma
-    </li>
-    
-</ul>
-</Description>
+        <Main>
+          <Title>
+            <Design width={40} height={40} /> Frontend Development Wizard
+          </Title>
+          <Description>
+            Passionate about crafting a seamless user experience, I thrive on transforming unique visions into digital reality.
+          </Description>
+          <Description>
+            <strong>Core Skills</strong>
+            <ul>
+              <li>React & Next.JS</li>
+              <li>HTML5 & CSS3</li>
+              <li>Modern JavaScript (ES6+)</li>
+            </ul>
+          </Description>
+          <Description>
+            <strong>Favorite Tools</strong>
+            <ul>
+              <li>GitHub</li>
+              <li>Visual Studio Code</li>
+              <li>Figma for UI/UX Design</li>
+            </ul>
+          </Description>
+        </Main>
 
-            </Main>
-            <Main>
-<Title>
-    <Develope width={40} height={40} /> Backend  Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<p>
-NodeJS, TypeScript, Python, NestJS, SQL ,NoSQL, PostgreSQL, Django, Flask, AWS, Azure, Bash Scripting
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
-</Description>
+        <Main>
+          <Title>
+            <Develope width={40} height={40} /> Backend Development Maestro
+          </Title>
+          <Description>
+            With a knack for building robust backends, I ensure your applications run efficiently under the hood.
+          </Description>
+          <Description>
+            <strong>Proficiencies</strong>
+            <p>NodeJS, Python, Serverless Architecture, RESTful APIs, GraphQL, SQL & NoSQL Databases</p>
+          </Description>
+          <Description>
+            <strong>Toolbox</strong>
+            <p>Docker, AWS Services, CI/CD Pipelines, and various testing tools.</p>
+          </Description>
+        </Main>
 
-            </Main>
-
-            <BigTitle text="SKILLS" top="80%" right="30%" />
-
-        </Box>
-
-        </ThemeProvider>
-        
-    )
+        <BigTitle text="SKILLS" top="80%" right="30%" />
+      </Box>
+    </ThemeProvider>
+  )
 }
 
 export default MySkillsPage

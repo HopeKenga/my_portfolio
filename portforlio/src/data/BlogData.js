@@ -41,5 +41,13 @@ export const Blogs = [
         imgSrc:"https://res.cloudinary.com/dt5yeftv3/image/upload/v1623444138/Cole/pink_xsbso3.jpg",
         link:"https://riziki.hashnode.dev/static-typing"
     },
+    {
+        id:8,
+        name:"A Comprehensive Ping Diagnostic Tool with Python",
+        tags:["Ping", "Address"],
+        date:"October 2023",
+        imgSrc:"https://res.cloudinary.com/dt5yeftv3/image/upload/v1683664799/IMG_1517_el3q2i.png",
+        link:"https://riziki.hashnode.dev/a-comprehensive-ping-diagnostic-tool-with-python"
+    }
   
 ] 
