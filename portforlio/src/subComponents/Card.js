@@ -6,35 +6,40 @@ import { Github } from '../components/AllSvgs';
 
 
 const Box = styled(motion.li)`
-width: 16rem;
-height: 40vh;
-background-color: ${props => props.theme.text};
-color:${props => props.theme.body};
-padding: 1.5rem 2rem;
-margin-right: 8rem;
-border-radius: 0 50px 0 50px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-border: 1px solid ${props => props.theme.body};
-transition: all 0.2s ease;
+  width: 16rem;
+  height: 35vh;
+  background-color: ${props => props.theme.text};
+  color:${props => props.theme.body};
+  padding: 1.5rem 2rem;
+  margin-right: 8rem;
+  border-radius: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid ${props => props.theme.body};
+  transition: all 0.2s ease;
 
-&:hover{
-background-color: ${props => props.theme.body};
-color:${props => props.theme.text};
-border: 1px solid ${props => props.theme.text};
 
-}
+  &:hover{
+    background-color: ${props => props.theme.body};
+    color:${props => props.theme.text};
+    border: 1px solid ${props => props.theme.text};
+  }
 `
+
 const Title = styled.h2`
-font-size: calc(1em + 0.5vw);
+  font-size: calc(1em + 0.5vw);
+
 `
 
 const Description = styled.h2`
-font-size: calc(0.8em + 0.3vw);
-font-family: 'Karla',sans-serif;
-font-weight: 500;
+  font-size: calc(0.8em + 0.3vw);
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  overflow-y: auto; 
+  word-wrap: break-word; 
 `
+
 const Tags = styled.div`
 border-top: 2px solid ${props =>props.theme.body};
 padding-top: 0.5rem;

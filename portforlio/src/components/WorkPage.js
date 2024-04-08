@@ -13,7 +13,7 @@ import { YinYang } from "./AllSvgs";
 import BigTitlte from "../subComponents/BigTitlte";
 
 const Box = styled.div`
-  background-color: ${(props) => props.theme.body};
+  background-color: #88B2CC;
 
   height: 400vh;
   position: relative;
@@ -21,13 +21,18 @@ const Box = styled.div`
   align-items: center;
 `;
 
+
+// Your existing Main component
 const Main = styled(motion.ul)`
   position: fixed;
   top: 12rem;
   left: calc(10rem + 15vw);
   height: 40vh;
   display: flex;
-
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent; 
   color: white;
 `;
 const Rotate = styled.span`
@@ -59,19 +64,20 @@ const WorkPage = () => {
 
   useEffect(() => {
     let element = ref.current;
-
+  
     const rotate = () => {
       element.style.transform = `translateX(${-window.pageYOffset}px)`;
 
       return (yinyang.current.style.transform =
         "rotate(" + -window.pageYOffset + "deg)");
     };
-
+  
     window.addEventListener("scroll", rotate);
     return () => {
       window.removeEventListener("scroll", rotate);
     };
   }, []);
+  
 
   return (
     <ThemeProvider theme={DarkTheme}>
@@ -83,6 +89,7 @@ const WorkPage = () => {
         <Main ref={ref} variants={container} initial="hidden" animate="show">
           {Work.map((d) => (
             <Card key={d.id} data={d} />
+      
           ))}
         </Main>
         <Rotate ref={yinyang}>

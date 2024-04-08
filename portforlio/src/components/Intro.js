@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import Me from '../assets/Images/profile-img.png'
 
 
@@ -26,7 +26,7 @@ background: linear-gradient(
     ${props => props.theme.body} 50%,
     ${props => props.theme.text} 50%) top;
     background-repeat: no-repeat;
-background-size: 100% 2px;
+    background-size: 100% 2px;
     border-left: 2px solid ${props => props.theme.body};
     border-right: 2px solid ${props => props.theme.text};
 
@@ -51,7 +51,7 @@ display: flex;
 
 const Text = styled.div`
 font-size: calc(1em + 1.5vw);
-color: ${props => props.theme.body};
+color: #E4E9EC;
 padding: 2rem;
 cursor: pointer;
 
@@ -60,7 +60,7 @@ flex-direction: column;
 justify-content: space-evenly;
 
 &>*:last-child{
-    color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
+    color: #E4E9EC;
     font-size: calc(0.5rem + 1.5vw);
     font-weight:300;
 
@@ -71,30 +71,30 @@ justify-content: space-evenly;
 `
 
 const Intro = () => {
-    return (
-        <Box
-        initial={{height:0}}
-        animate={{height: '55vh'}}
-        transition={{ type: 'spring', duration:2, delay:1 }}
+  return (
+    <Box
+      initial={{ height: 0 }}
+      animate={{ height: '55vh' }}
+      transition={{ type: 'spring', duration: 2, delay: 1 }}
+    >
+      <SubBox>
+        <Text>
+          <h1>Hello 👋🏾,</h1>
+          <h3>I'm Riziki 🌼.</h3>
+          <p>Full Stack Developer with an insatiable appetite for books.<br />Blending innovative coding with immersive storytelling, I craft experiences that resonate.</p>
+        </Text>
+      </SubBox>
+      <SubBox>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
         >
-            <SubBox>
-                <Text>
-                    <h1>Hello 👋🏾,</h1>
-                    <h3>I'm Riziki 🌼.</h3>
-                    <h6>I'm a Fullstack Developer with a love of books</h6>
-                </Text>
-            </SubBox>
-            <SubBox>
-                <motion.div
-                initial={{opacity:0}}
-        animate={{opacity: 1}}
-        transition={{ duration:1, delay:2 }}
-                >
-                    <img className="pic" src={Me} alt="Profile Pic" />
-                </motion.div>
-            </SubBox>
-        </Box>
-    )
+          <img className="pic" src={Me} alt="Profile Pic" />
+        </motion.div>
+      </SubBox>
+    </Box>
+  )
 }
 
 export default Intro

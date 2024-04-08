@@ -8,10 +8,10 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
-import astronaut from '../assets/Images/spaceman.png'
+import cosmonaut from '../assets/Images/cosmonaut.png'
 
 const Box = styled.div`
-background-color: ${props => props.theme.body};
+background-color: #287686;
 width: 100vw;
 height:100vh;
 position: relative;
@@ -25,18 +25,20 @@ const float = keyframes`
 `
 const Spaceman = styled.div`
 position: absolute;
-top: 10%;
-right: 5%;
+top: 40%; 
+left: 70%; 
+transform: translate(-50%, -50%); 
 width: 20vw;
 animation: ${float} 4s ease infinite;
-img{
+img {
     width: 100%;
     height: auto;
 }
 `
+
 const Main =  styled.div`
-  border: 2px solid ${(props) => props.theme.text};
-  color: ${(props) => props.theme.text};
+  border: white solid;
+  color: white;
   padding: 2rem;
   width: 50vw;
   height: 60vh;
@@ -63,16 +65,18 @@ const AboutPage = () => {
         <ThemeProvider theme={DarkTheme}>
 <Box>
 
-<LogoComponent theme='dark'/>
+<LogoComponent theme='light'/>
 <SocialIcons theme='dark'/>
 <PowerButton />
 <ParticleComponent theme='dark' />
 
         <Spaceman>
-            <img src={astronaut} alt="spaceman" />
+            <img src={cosmonaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I started out as  Backend Developer, so we can say I have a knack for backend development
+        I started out as  Backend Developer, so we can say I have a knack for backend development. This solid foundation has fueled my transition to full-stack development,
+        <br/>
+        <br /> where I now thrive in orchestrating the entire spectrum of web application development—from database operations to user interfaces.
 <br /> <br/>
 I'm interested in Software Engineering as a whole, if I could I'd dive deep into Assembly and start from the bottom up🚀
 <br/> <br/>

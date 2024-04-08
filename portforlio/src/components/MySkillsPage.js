@@ -10,7 +10,7 @@ import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
 
 const Box = styled.div`
-background-color: ${props => props.theme.body};
+background-color: #93B9B8;
 width: 100vw;
 height:100vh;
 position: relative;
@@ -24,7 +24,7 @@ align-items: center;
 const Main = styled.div`
 border: 2px solid ${props => props.theme.text};
 color: ${props => props.theme.text};
-background-color: ${props => props.theme.body};
+background-color: #D9C7B2;
 padding: 2rem;
 width: 30vw;
 height: 60vh;
@@ -100,7 +100,7 @@ const MySkillsPage = () => {
           <Description>
             <strong>Core Skills</strong>
             <ul>
-              <li>React & Next.JS</li>
+              <li>React , Angular,  Next.JS</li>
               <li>HTML5 & CSS3</li>
               <li>Modern JavaScript (ES6+)</li>
             </ul>
@@ -112,7 +112,7 @@ const MySkillsPage = () => {
               <li>Visual Studio Code</li>
               <li>Figma for UI/UX Design</li>
             </ul>
-          </Description>
+                    </Description>
         </Main>
 
         <Main>
@@ -122,9 +122,9 @@ const MySkillsPage = () => {
           <Description>
             With a knack for building robust backends, I ensure your applications run efficiently under the hood.
           </Description>
-          <Description>
+        <Description>
             <strong>Proficiencies</strong>
-            <p>NodeJS, Python, Serverless Architecture, RESTful APIs, GraphQL, SQL & NoSQL Databases</p>
+            <p>NodeJS, NestJS, Typescript, Python, Serverless Architecture, RESTful APIs, GraphQL, SQL & NoSQL Databases</p>
           </Description>
           <Description>
             <strong>Toolbox</strong>
