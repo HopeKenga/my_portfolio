@@ -3,6 +3,15 @@
 export const Work = [
     {
         id: 1,
+        name: "Traffic Simulator",
+        description: "A simple simulator that dislays vehicles trying to cross an intersection simultaneously",
+        tags: ["Java"],
+
+        github: "https://github.com/HopeKenga/Traffic_Intersection_Simulator"
+
+    },
+    {
+        id: 2,
         name: "RSpace",
         description: "Embark on a Journey\nof Growth & Support",
         tags: ["Laravel", "sql", "AWS", "NodeJS"],
@@ -12,7 +21,7 @@ export const Work = [
 
     },
     {
-        id: 2,
+        id: 3,
         name: "Mealpal",
         description: "A kitchen co-pilot\nbuilt with Angular and NodeJS",
         tags: ["angular", "postgresql", "NodeJS", "PRISMA"],
@@ -22,7 +31,7 @@ export const Work = [
 
     },
     {
-        id: 3,
+        id: 4,
         name: "Web2 to Web3 App",
         description: "A programmable example of\nIdentity Aggregation through\nconversion of an app from aWeb2 to Web3",
         tags: ["typescript", "postgresql", "DID", "PRISMA"],
@@ -31,7 +40,7 @@ export const Work = [
         github: "https://github.com/HopeKenga/Web2-to-Web3"
     },
     {
-        id: 4,
+        id: 5,
         name: "TO-DO",
         description: "To Do app built with NestJS",
         tags: ["NestJS"],
@@ -41,7 +50,7 @@ export const Work = [
 
     },
     {
-        id: 5,
+        id: 6,
         name: "Customer Support",
         description: "A fullstack Customer Support\napp built with PHP\nand NodeJS with a SQL DB ",
         tags: ["PHP", "NODE", "SQL"],

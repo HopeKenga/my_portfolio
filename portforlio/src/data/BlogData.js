@@ -3,6 +3,14 @@
 export const Blogs = [
     {
         id:1,
+        name:"",
+        tags:["quantum"],
+        date:"January 2025",
+        imgSrc:"https://res.cloudinary.com/dt5yeftv3/image/upload/v1624385443/bonfire_xqc1et.gif",
+        link:"https://riziki.hashnode.dev/the-quantum-nature-of-grief-a-scientific-and-personal-exploration-of-loss"
+    },
+    {
+        id:2,
         name:"Converting a Web2 to Web3 app ",
         tags:["typescript, nestjs, apis"],
         date:"9th May 2023",
@@ -10,7 +18,7 @@ export const Blogs = [
         link:"https://github.com/HopeKenga/Web2-to-Web3"
     },
     {
-        id:2,
+        id:3,
         name:"Monorepos",
         tags:["nx","monorepos"],
         date:"September, 2022",
@@ -18,7 +26,7 @@ export const Blogs = [
         link:"https://riziki.hashnode.dev/monorepos"
     },
     {
-        id:3,
+        id:4,
         name:"Volatile Stock Watcher",
         tags:["Python","Data Analysis", "Data Structures"],
         date:"April, 2023",
@@ -26,7 +34,7 @@ export const Blogs = [
         link:"https://github.com/HopeKenga/Volatile_Stock_Watcher"
     },
     {
-        id:4,
+        id:5,
         name:"Bash Script to check for used and unused dependencies",
         tags:["node_modules","bash_scripting"],
         date:"January 2023",
@@ -34,7 +42,7 @@ export const Blogs = [
         link:"https://riziki.hashnode.dev/bash-script-to-check-used-and-unused-and-unused-dependencies"
     },   
     {
-        id:7,
+        id:6,
         name:"Static Typing",
         tags:["OOP", "TypeScript"],
         date:"October 2022",
@@ -42,7 +50,7 @@ export const Blogs = [
         link:"https://riziki.hashnode.dev/static-typing"
     },
     {
-        id:8,
+        id:7,
         name:"A Comprehensive Ping Diagnostic Tool with Python",
         tags:["Ping", "Address"],
         date:"October 2023",
